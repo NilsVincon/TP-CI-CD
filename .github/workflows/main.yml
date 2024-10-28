@@ -18,4 +18,4 @@ jobs:
           distribution: 'adopt'
         
       - name: Build and test with Maven
-        run: mvn clean install --file ./simple-api/pom.xml
+        run: mvn clean verify --file ./simple-api/pom.xml
