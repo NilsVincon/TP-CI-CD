@@ -3,9 +3,8 @@ name: Build and Push Docker Image
 on:
   workflow_run:
     workflows: ["Test Backend"]
-    types:
-      - completed
-
+    branches:
+      - main
 jobs:
   build-and-push-docker-image:
     runs-on: ubuntu-22.04
